@@ -1,0 +1,4 @@
+Scenario,Java8 OK,Java8 WRONG,JavaX OK,JavaX WRONG
+token,8434,5116,6672,6875
+construct,1828,1907,1145,2349
+block,2190,4037,960,4690
