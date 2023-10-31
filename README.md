@@ -10,7 +10,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     We trained the model using HuggingFace library. HuggingFace allowed us to load the pretraining checkpoint using 
 `model = T5ForConditionalGeneration.from_pretrained("Salesforce/codet5-base")` without pretraining the model. We loaded also the tokenizer using 
 `tokenizer = RobertaTokenizer.from_pretrained(args.tokenizer_name)`. For this reason we did not share the pretraining model dataset and tokenizer
-    You can find the finetuning datasets, one for each java version, [here](https://zenodo.org/10057237) inside `datasets` folder. 
+    You can find the finetuning datasets, one for each java version, [here](https://zenodo.org/records/10057237) inside `datasets` folder. 
 
 
 * ##### Hyper Parameter tuning
@@ -67,7 +67,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     | NO               | 5e-5          | 8%       |
     
     The best configuration in both cases is the one with learning rate= 5e-5
-    We reported the predictions of all the 6 models [here](https://zenodo.org/10057237) inside the `HP_tuning` folder.
+    We reported the predictions of all the 6 models [here](https://zenodo.org/records/10057237) inside the `HP_tuning` folder.
 
     
 * ##### Finetuning
@@ -115,7 +115,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     All the scripts can be found in `scripts/finetuning` folder.
     
     The best performing model was the last checkpoint for the model with pretraining and the second-last checkpoint for the model without pretraining (we performed the early stopping condition using 10 as number of checkpoints without improvement). We chose to avoid further training, since the model has been trained for 26 days and they were close to convergence.
-    You can find the finetuned models [here](https://zenodo.org/10057237) inside the `finetuned_models` folder, together with the performance of all evaluated checkpoints.
+    You can find the finetuned models [here](https://zenodo.org/records/10057237) inside the `finetuned_models` folder, together with the performance of all evaluated checkpoints.
     
     Once we found the best performing model, we evaluated it on all the test set (one for each java version):
     
@@ -134,7 +134,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     --seed 42 
     ```
     
-    We saved the results [here](https://zenodo.org/10057237) in the `results_finetuning` folder
+    We saved the results [here](https://zenodo.org/records/10057237) in the `results_finetuning` folder
     
   
 * ##### Second finetuning   
@@ -182,7 +182,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     --seed 42 
     ```
     
-    We stored all the best model for each Java version [here](https://zenodo.org/10057237) in the `second_finetuned_models` folder.
+    We stored all the best model for each Java version [here](https://zenodo.org/records/10057237) in the `second_finetuned_models` folder.
     
     We then evaluated all the models on the test set to see whether the performance improved (results are available in the paper).
     For computing the results you can run:
@@ -203,7 +203,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     --seed 42 
     ```
     
-    We stored the predictions of each model  [here](https://zenodo.org/10057237) in the `results_second_finetuning` folder. 
+    We stored the predictions of each model  [here](https://zenodo.org/records/10057237) in the `results_second_finetuning` folder. 
     
 * ##### Analysis
    
@@ -216,7 +216,7 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     ```
     You can find, for each of the 100 random samples, the ID of the selected instances, together with the number of correct and wrong prediction in the sample. We used this data for creating the boxplot in the paper
     
-    This data can be found [here](https://zenodo.org/10057237) in the `analysis/constructs` folder. 
+    This data can be found [here](https://zenodo.org/records/10057237) in the `analysis/constructs` folder. 
     
     To assess the impact of the version-specific finetuning, we performed the Fisher's test for the pre-trained and non pre-trained model.
     We reported in the `statistic_analysis` folder the data used for the computing the Fisher's test (in `data_with_pretraining` and `data_without_pretraining` subfolders) together with the script `fisher.R`. We commented in the paper the results for the model without the pretraining. The results for the pretrained model are the following:
