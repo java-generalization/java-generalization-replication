@@ -222,3 +222,10 @@ This is the replication package of `On the Generalizability of Deep Learning-bas
     We reported in the `statistic_analysis` folder the data used for the computing the Fisher's test (in `data_with_pretraining` and `data_without_pretraining` subfolders) together with the script `fisher.R`. We commented in the paper the results for the model without the pretraining. The results for the pretrained model are the following:
 
 We adopted this script for computing all Fisher's tests described in the paper.
+
+* ##### CrystalBLEU
+
+    We analyzed the difference between each test set not only comparing the percentage of Exact Match predictions but also in terms of CrystalBLEU.
+    <p align="center">
+   <img src="crystalbleu/crystalbleu.jpg" width="800" alt="CrystalBLEU">
+   </p>
