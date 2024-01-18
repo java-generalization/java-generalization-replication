@@ -226,6 +226,13 @@ We adopted this script for computing all Fisher's tests described in the paper.
 * ##### CrystalBLEU
 
     We analyzed the difference between each test set not only comparing the percentage of Exact Match predictions but also in terms of CrystalBLEU.
+    
+    CrystalBLEU for non pre-trained model
     <p align="center">
-   <img src="crystalbleu/crystalbleu.jpg" width="800" alt="CrystalBLEU">
+   <img src="crystalbleu/crystalbleu_without.jpg" width="800" alt="CrystalBLEU">
+   </p>
+       
+   CrystalBLEU for pre-trained model
+   <p align="center">
+   <img src="crystalbleu/crystalbleu_without.jpg" width="800" alt="CrystalBLEU">
    </p>
